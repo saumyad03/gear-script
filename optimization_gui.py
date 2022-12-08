@@ -38,9 +38,9 @@ diametral_pitch_entry = createEntry()
 
 generate_button = createButton("Generate")
 
-message_label = createLabel("asdf")
+message_label = createLabel("")
 # configures message label so that text wraps
-message_label.configure(wraplength=200)
+message_label.configure(wraplength=400)
 
 # function that toggles tooth count range/single value
 def toggleText(btn):
@@ -73,19 +73,19 @@ planets_toggle.configure(command=togglePlanets)
 teeth_label.grid(row = 0, column = 0)
 min_teeth_entry.grid(row = 1, column = 0)
 max_teeth_entry.grid(row = 1, column = 1)
-teeth_toggle.grid(row = 1, column = 2)
+teeth_toggle.grid(row = 1, column = 2, padx=50)
 
 planets_label.grid(row = 2, column = 0)
 min_planets_entry.grid(row = 3, column = 0)
 max_planets_entry.grid(row = 3, column = 1)
-planets_toggle.grid(row = 3, column = 2)
+planets_toggle.grid(row = 3, column = 2, padx = 50)
 
 diametral_pitch_label.grid(row = 4, column = 0)
 diametral_pitch_entry.grid(row = 5, column = 0)
 
-generate_button.grid(row = 6, column = 0, columnspan = 2)
+generate_button.grid(row = 6, column = 1, pady=20)
 
-message_label.grid(row = 7, column = 0, columnspan = 2)
+message_label.grid(row = 7, column = 0, columnspan = 3)
 
 # function that validates all data is reasonable and performs the optimization
 def valCalc():
