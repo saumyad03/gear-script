@@ -1,7 +1,13 @@
+# Personal Notes For Updated GUI:
+# constraints - ranges/min/max (input and output)
+# input and output validation
+# combinations - export to excel sheet
+
 # imports tkinter (Python GUI library)
 import tkinter as tk
-# import gear_script function that generates outputs
+# import gear_script.py file that contains function that generates outputs
 from gear_script import *
+# import find_optimal_gears.py file that contains function that generates 
 
 # creates window, sets window title, sets window color, sets window dimensions
 window = tk.Tk()
